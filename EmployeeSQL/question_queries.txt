@@ -15,3 +15,22 @@ FROM dept_manager AS dm
 LEFT OUTER JOIN employees AS e ON dm.emp_no = e.emp_no
 LEFT OUTER JOIN departments AS d ON d.dept_no = dm.dept_no;
 
+4. 
+
+
+5. 
+SELECT first_name, last_name, sex
+FROM employees
+WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
+
+6. 
+
+
+7.
+
+
+8.
+SELECT last_name, COUNT(last_name)
+FROM employees
+GROUP BY last_name
+ORDER BY 2 DESC;
